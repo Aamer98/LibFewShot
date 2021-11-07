@@ -17,7 +17,7 @@
 nvidia-smi
 
 module load python/3.7
-source ~/ENV/bin/activate
+source ~/py37/bin/activate
 
 echo "------------------------------------< Data preparation>----------------------------------"
 echo "Copying the source code"
