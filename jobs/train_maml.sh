@@ -5,7 +5,7 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --job-name=train_ProtoNet
+#SBATCH --job-name=train_MAML
 #SBATCH --output=%x-%j.out
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:2
@@ -17,7 +17,7 @@
 nvidia-smi
 
 module load python/3.7
-source ~/py37/bin/activate
+source ~/my_env/bin/activate
 
 echo "------------------------------------< Data preparation>----------------------------------"
 echo "Copying the source code"
@@ -50,10 +50,10 @@ echo "---------------------------------------<Run the program>------------------
 date +"%T"
 
 cd ..
-python run_trainer.py --shot_num 1 --data_root ./dataset/miniImageNet--ravi --conf_file ./config/reproduce/Proto/ProtoNet-miniImageNet-Conv64F-5-1-Table2.yaml
+python run_trainer.py --shot_num 1 --data_root ./dataset/miniImageNet--ravi --conf_file ./config/reproduce/MAML/MAML_1shot.yaml
 # python run_trainer.py --shot_num 1 --data_root ./dataset/tiered_imagenet --conf_file ./config/proto.yaml
 
-python run_trainer.py --shot_num 5 --data_root ./dataset/miniImageNet--ravi --conf_file ./config/reproduce/Proto/ProtoNet-miniImageNet-Conv64F-5-5-Table2.yaml
+python run_trainer.py --shot_num 5 --data_root ./dataset/miniImageNet--ravi --conf_file ./config/reproduce/MAML/MAML_5shot.yaml
 # python run_trainer.py --shot_num 5 --data_root ./dataset/tiered_imagenet --conf_file ./config/proto.yaml
 
 wait

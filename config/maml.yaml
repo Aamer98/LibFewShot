@@ -5,7 +5,7 @@ includes:
   - headers/model.yaml
   - headers/optimizer.yaml
   - classifiers/MAML.yaml
-  - backbones/resnet12.yaml
+  - backbones/Conv64F.yaml
 
 way_num: 5
 shot_num: 1
@@ -34,45 +34,3 @@ classifier:
       lr: 1e-2
       iter: 5
     feat_dim: 1600
-
-
-# backbone:
-#   name: resnet12
-#   kwargs:
-#     keep_prob: 0.0
-
-# classifier:
-#   name: MAML
-#   kwargs:
-#     inner_param:
-#       lr: 1e-2
-#       iter: 5
-#     feat_dim: 640
-
-
-# backbone:
-#   name: resnet18
-#   kwargs: ~
-
-# classifier:
-#   name: MAML
-#   kwargs:
-#     inner_param:
-#       lr: 1e-2
-#       iter: 5
-#     feat_dim: 512
-
-
-# backbone:
-#   name: WRN
-#   kwargs:
-#     depth: 28
-#     widen_factor: 10
-
-# classifier:
-#   name: MAML
-#   kwargs:
-#     inner_param:
-#       lr: 1e-2
-#       iter: 5
-#     feat_dim: 640
