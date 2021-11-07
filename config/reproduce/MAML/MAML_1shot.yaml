@@ -12,8 +12,12 @@ backbone:
   name: Conv64F
 batch_size: 128
 classifier:
-  kwargs: null
   name: MAML
+  kwargs:
+    inner_param:
+      lr: 1e-2
+      iter: 5
+    feat_dim: 1600
 data_root: null
 deterministic: true
 device_ids: 0,1

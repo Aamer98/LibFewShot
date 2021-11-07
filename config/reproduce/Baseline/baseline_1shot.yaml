@@ -12,8 +12,18 @@ backbone:
   name: Conv64F
 batch_size: 128
 classifier:
-  kwargs: null
   name: Baseline
+  kwargs:
+    inner_param:
+      inner_optim:
+        name: SGD
+        kwargs:
+          lr: 1e-2
+          weight_decay: 0.0005
+      inner_train_iter: 100
+      inner_batch_size: 4
+    feat_dim: 1600
+    num_class: 64
 data_root: null
 deterministic: true
 device_ids: 0,1
