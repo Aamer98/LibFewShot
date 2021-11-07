@@ -9,4 +9,6 @@ save_interval: 10
 save_part:
   - emb_func
 
-tag: ~
+tag: 'Seed0'
+
+conf_file: ''
