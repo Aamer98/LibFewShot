@@ -11,7 +11,7 @@
 #SBATCH --gres=gpu:2
 #SBATCH --ntasks-per-node=32
 #SBATCH --mem=127000M
-#SBATCH --time=0-01:00
+#SBATCH --time=2-00:00
 #SBATCH --account=rrg-ebrahimi
 
 nvidia-smi
@@ -51,9 +51,10 @@ date +"%T"
 
 cd ..
 python run_trainer.py --shot_num 1 --data_root ./dataset/miniImageNet--ravi --conf_file ./config/reproduce/Proto/ProtoNet-miniImageNet-Conv64F-5-1-Table2.yaml
+C:\Users\Aamer\Source\Repos\LibFewShot\config
 # python run_trainer.py --shot_num 1 --data_root ./dataset/tiered_imagenet --conf_file ./config/proto.yaml
 
-python run_trainer.py --shot_num 5 --data_root ./dataset/miniImageNet--ravi --conf_file ./config/reproduce/Proto/ProtoNet-miniImageNet-Conv64F-5-1-Table2.yaml
+python run_trainer.py --shot_num 5 --data_root ./dataset/miniImageNet--ravi --conf_file ./config/reproduce/Proto/ProtoNet-miniImageNet-Conv64F-5-5-Table2.yaml
 # python run_trainer.py --shot_num 5 --data_root ./dataset/tiered_imagenet --conf_file ./config/proto.yaml
 
 wait
