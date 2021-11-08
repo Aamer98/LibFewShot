@@ -59,4 +59,4 @@ python run_trainer.py --shot_num 5 --data_root ./dataset/miniImageNet--ravi --co
 wait
 
 cd $SLURM_TMPDIR
-cp -r $SLURM_TMPDIR/LibFewShot/results/ ~/scratch/LibFewShot/results/
+cp -r $SLURM_TMPDIR/LibFewShot/results/ ~/scratch/LibFewShot/

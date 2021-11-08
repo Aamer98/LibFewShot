@@ -17,7 +17,7 @@
 nvidia-smi
 
 module load python/3.7
-source ~/py37/bin/activate
+source ~/my_env3/bin/activate
 
 echo "------------------------------------< Data preparation>----------------------------------"
 echo "Copying the source code"
@@ -56,4 +56,4 @@ python run_trainer.py --shot_num 20 --data_root ./dataset/miniImageNet--ravi --c
 wait
 
 cd $SLURM_TMPDIR
-cp -r $SLURM_TMPDIR/LibFewShot/results/ ~/scratch/LibFewShot/results/
+cp -r $SLURM_TMPDIR/LibFewShot/results/ ~/scratch/LibFewShot/
