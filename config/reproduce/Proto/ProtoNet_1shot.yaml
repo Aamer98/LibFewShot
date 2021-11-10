@@ -17,7 +17,7 @@ classifier:
 data_root: null
 deterministic: true
 device_ids: 0,1
-episode_size: 1
+episode_size: 2
 epoch: 100
 image_size: 84
 includes:
@@ -43,7 +43,8 @@ optimizer:
     lr: 0.001
     weight_decay: 0.0005
   name: SGD
-  other: null
+  other:
+    emb_func: 0.001
 parallel_part:
 - emb_func
 pretrain_path: null
@@ -54,13 +55,13 @@ save_interval: 10
 save_part:
 - emb_func
 seed: 0
-shot_num: 5
+shot_num: 1
 tag: null
-tb_scale: 10.0
+tb_scale: 10
 test_episode: 1000
 test_epoch: 5
 test_query: 15
-test_shot: 5
+test_shot: 1
 test_way: 5
 train_episode: 10000
 use_memory: false

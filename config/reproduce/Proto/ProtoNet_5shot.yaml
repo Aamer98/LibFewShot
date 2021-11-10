@@ -43,7 +43,8 @@ optimizer:
     lr: 0.001
     weight_decay: 0.0005
   name: SGD
-  other: null
+  other:
+    emb_func: 0.001
 parallel_part:
 - emb_func
 pretrain_path: null
