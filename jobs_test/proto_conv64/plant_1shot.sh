@@ -38,7 +38,7 @@ cd LibFewShot/dataset
 #tar -xf $SLURM_TMPDIR/CUB_birds_2010.tar.gz
 #tar -xf $SLURM_TMPDIR/StanfordCar.tar.gz
 #tar -xf $SLURM_TMPDIR/StanfordDog.tar.gz
-unzip plant_disease_lfs.zip
+unzip $SLURM_TMPDIR/plant_disease_lfs.zip
 
 #tar -xf $SLURM_TMPDIR/miniImageNet--ravi.tar.gz
 #cat $SLURM_TMPDIR/tieredImageNet.tar.gz* | tar -zxf -
