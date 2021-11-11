@@ -17,7 +17,7 @@
 nvidia-smi
 
 module load python/3.7
-source ~/my_env5/bin/activate
+source ~/my_env6/bin/activate
 
 echo "------------------------------------< Data preparation>----------------------------------"
 echo "Copying the source code"
@@ -51,11 +51,11 @@ echo "---------------------------------------<Run the program>------------------
 date +"%T"
 
 cd ..
-python run_test.py --data_root ./dataset/StanfordDog --weight-root ./results/ProtoNet-miniImageNet--ravi-Conv64F-5-1-Nov-10-2021-08-49-17
+python run_test.py --data_root ./dataset/StanfordDog
 
 
 
-python run_test.py --data_root ./dataset/StanfordDog --weight-root ./results/ProtoNet-miniImageNet--ravi-Conv64F-5-5-Nov-10-2021-14-47-48
+#python run_test.py --data_root ./dataset/StanfordDog --weight-root ./results/ProtoNet-miniImageNet--ravi-Conv64F-5-5-Nov-10-2021-14-47-48
 
 
 wait

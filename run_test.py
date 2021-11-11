@@ -21,6 +21,7 @@ parser = argparse.ArgumentParser(description='LibFewShot Training')
 parser.add_argument('--data_root', default='./dataset/miniImageNet--ravi',  help='path to dataset')
 parser.add_argument('--weight_root', default='./results/ProtoNet-miniImageNet--ravi-Conv64F-5-1-Nov-10-2021-05-19-50', help = 'path to weight')
 
+weight_root = './results/ProtoNet-miniImageNet--ravi-Conv64F-5-1-Nov-10-2021-08-49-17'
 
 args = parser.parse_args()
 VAR_DICT = {
@@ -34,11 +35,11 @@ VAR_DICT = {
 
 
 if __name__ == "__main__":
-    print('\\\\\\\\\\\\\\\\\\\\' + args.weight_root + '>>>>>>>>>>>>>>>>>>>>>>>>>>>' )
+    print('\\\\\\\\\\\\\\\\\\\\' + weight_root + '>>>>>>>>>>>>>>>>>>>>>>>>>>>' )
     print('\\\\\\\\\\\\\\\\\\\\' + args.data_root + '>>>>>>>>>>>>>>>>>>>>>>>>>>>' )
-    config = Config(os.path.join(args.weight_root, "config.yaml"),
+    config = Config(os.path.join(weight_root, "config.yaml"),
                     VAR_DICT).get_config_dict()
-    test = Test(config, args.weight_root)
+    test = Test(config, weight_root)
     test.test_loop()
 
 
