@@ -5,7 +5,7 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --job-name=proto_conv64_plant_1shot
+#SBATCH --job-name=proto_conv64_plant_5shot
 #SBATCH --output=%x-%j.out
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
@@ -51,7 +51,7 @@ echo "---------------------------------------<Run the program>------------------
 date +"%T"
 
 cd ..
-python run_test_moz.py --data_root ./dataset/plant_disease
+python run_test_tired.py --data_root ./dataset/plant_disease
 
 
 #python run_test.py --data_root ./dataset/plant_disease --weight-root ./results/ProtoNet-miniImageNet--ravi-Conv64F-5-5-Nov-10-2021-14-47-48
