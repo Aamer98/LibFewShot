@@ -23,7 +23,7 @@ parser.add_argument('--weight_root', default='./results/ProtoNet-miniImageNet--r
 
 #Baseline-miniImageNet--ravi-Conv64F-5-5-freeitter-Nov-10-2021-16-36-04
 #Baseline-miniImageNet--ravi-Conv64F-5-1-freeitter-Nov-10-2021-10-58-29
-weight_root = './results_mosy/Baseline-miniImageNet--ravi-Conv64F-5-5-freeitter-Nov-10-2021-16-36-04'
+weight_root = './results_mosy/Baseline-miniImageNet--ravi-Conv64F-5-1-freeitter-Nov-10-2021-10-58-29'
 
 args = parser.parse_args()
 VAR_DICT = {
