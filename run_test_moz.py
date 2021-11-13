@@ -21,6 +21,8 @@ parser = argparse.ArgumentParser(description='LibFewShot Training')
 parser.add_argument('--data_root', default='./dataset/miniImageNet--ravi',  help='path to dataset')
 parser.add_argument('--weight_root', default='./results/ProtoNet-miniImageNet--ravi-Conv64F-5-1-Nov-10-2021-05-19-50', help = 'path to weight')
 
+#Baseline-miniImageNet--ravi-Conv64F-5-5-freeitter-Nov-10-2021-16-36-04
+#Baseline-miniImageNet--ravi-Conv64F-5-1-freeitter-Nov-10-2021-10-58-29
 weight_root = './results_mosy/Baseline-miniImageNet--ravi-Conv64F-5-5-freeitter-Nov-10-2021-16-36-04'
 
 args = parser.parse_args()
