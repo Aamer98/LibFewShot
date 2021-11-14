@@ -25,7 +25,7 @@ parser.add_argument('--weight_root', default='./results/ProtoNet-miniImageNet--r
 #ProtoNet-miniImageNet--ravi-Conv64F-5-1-Nov-10-2021-08-49-17
 #ProtoNet-miniImageNet--ravi-Conv64F-5-5-Nov-10-2021-14-47-48
 
-weight_root = './results/ProtoNet-miniImageNet--ravi-Conv64F-5-1-Nov-10-2021-08-49-17'
+weight_root = './results/ProtoNet-miniImageNet--ravi-Conv64F-5-5-Nov-10-2021-14-47-48'
 
 args = parser.parse_args()
 VAR_DICT = {
