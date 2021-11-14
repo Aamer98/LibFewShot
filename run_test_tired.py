@@ -23,7 +23,7 @@ parser.add_argument('--weight_root', default='./results/ProtoNet-miniImageNet--r
 
 
 #wgt = Baseline-tiered_imagenet-Conv64F-5-1-freeitter-Nov-10-2021-10-58-29
-wgt = Baseline-tiered_imagenet-Conv64F-5-5-freeitter-Nov-10-2021-16-36-04
+wgt = "Baseline-tiered_imagenet-Conv64F-5-5-freeitter-Nov-10-2021-16-36-04"
 
 #ProtoNet-miniImageNet--ravi-resnet18-5-5-Nov-11-2021-00-40-51
 #ProtoNet-miniImageNet--ravi-resnet18-5-1-Nov-10-2021-08-49-14
